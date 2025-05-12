@@ -2,231 +2,333 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="Iason Kostopoulos Portfolio" />
 
-    <!-- Edit meta description for SEO -->
+    <link rel="stylesheet" href="css/style.css" />
 
-    <meta
-      name="description"
-      content="A website for Iason. I'm a new graduate with a masters in Computer Engineering. I'm passionate about games and creating interesting stories and worlds."
-    />
-    <!-- Edit title -->
-    <title>IASON</title>
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
     />
-
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
-        rel="stylesheet"
-        type="text/css"
-      />
-    </noscript>
-
-    <!-- Styleshits -->
-    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#project">PROJECTS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-      </ul>
-    </nav>
-    <!-- End of Navigation -->
-
-    <!-- Home -->
-    <section class="center">
-      <main>
-        <!-- img and info container -->
-        <div class="img-info-container">
-          <!-- profile picture -->
-          <div class="img-container">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
             <img
-              width="80"
-              height="80"
-              src="./asset/img/me.jpeg"
-              alt="pfp"
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
             />
           </div>
-
-          <!-- info / the large text and social media -->
-          <div class="info-container">
-            <!-- svg/social media container -->
-            <div class="social-container">
-              <!-- GITHUB -->
-              <a href="https://github.com/poleftaiger1984" target="_blank"
-                ><img
-                  width="24"
-                  height="24"
-                  src="./asset/svg/github.svg"
-                  alt="github"
-              /></a>
-
-              <!-- LINKEDIN -->
-              <a
-                href="https://www.linkedin.com/in/iasonas-kostopoulos-441469236/"
-                target="_blank"
-                ><img
-                  width="24"
-                  height="24"
-                  src="./asset/svg/linkedin.svg"
-                  alt="linkedin"
-              /></a>
-            </div>
-
-            <!-- name -->
-            <h1>IASON</h1>
-            <hr />
-          </div>
         </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-        <p class="user-bio">
-          I'm a new graduate with a masters in Computer Engineering.<br />
-          I'm passionate about creating games, interesting stories and worlds.
-          <!-- <br />
-        <br />
-        Interested in Web, Game Development, Volleyball, Skiing, Writing -->
-        </p>
-      </main>
-    </section>
-    <!-- End of Home -->
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
 
-    <!-- Start of Project -->
-    <section class="center">
-      <div id="project">
-        <h2>PROJECTS</h2>
-        <!-- project container/ grid -->
-        <div class="project-container">
-          <!-- Repo -->
-          <div class="repository-container">
-            <div class="repository-head">
-              <a
-                href="https://github.com/notshanxx/anicard"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3>Slash</h3>
-              </a>
-              <a
-                href="https://github.com/Poleftaiger1984/SlashGame"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  width="16"
-                  height="16"
-                  src="./asset/svg/external-link.svg"
-                  alt="external-link"
-              /></a>
-            </div>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
 
-            <p class="repository-description">
-              A Third Person Game in Unreal Engine 5
-            </p>
-            <div class="repository-language-used-container">
-              <span class="language-used">C++</span>
-              <span class="language-used">Unreal Engine</span>
-            </div>
-          </div>
-          <!-- Repo End -->
-          
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
         </div>
-
-        <!-- To github repos -->
-        <div class="repository-container more-repo">
-          more at
-          <a
-            href="https://github.com/Poleftaiger1984/SlashGame"
-            target="_blank"
-            >GITHUB <img src="./asset/svg/external-link.svg" alt=""
-          /></a>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Iason Kostopoulos</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I'm a Computer Engineering graduate passionate about game design, and software design.
+			I work with Unreal Engine, C++, and WordPress to build game and web experiences.
+          </p>
         </div>
-        <!-- To github repos End-->
+        <div class="home-hero__cta">
+          <a href="./index.html#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/iasonas-kostopoulos-441469236/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/Poleftaiger1984" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
       </div>
     </section>
-    <!-- End of Project -->
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+				I'm <strong>Iason Kostopoulos</strong>, a Computer Engineering graduate with a focus on backend development, game design, and software architecture. 
+				I work with <strong> C++, Unreal Engine 5, and WordPress </strong> to build both web solutions and interactive experiences.
+			  </p>
+			  <p class="about__content-details-para">
+				In my free time, I develop game prototypes and create 3D art using <strong>Blender</strong>. I enjoy combining code with creativity to build engaging experiences.
+			  </p>
+            </div>
+            <a href="./index.html#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">C++</div>
+			  <div class="skills__skill">C</div>
+              <div class="skills__skill">Unreal Engine 5</div>
+              <div class="skills__skill">WordPress</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Java (In Progress)</div>
+              <div class="skills__skill">Raylib (Intermediate Knowledge)</div>
+              <div class="skills__skill">Blender</div>
+              <div class="skills__skill">ZBrush (Basic Knowledge)</div>
+              <div class="skills__skill">Houdini FX (Basic Knowledge)</div>
 
-    <!-- About -->
-    <div class="center">
-      <div id="about">
-        <!-- Image  -->
-        <div class="about-img-container">
-          <img
-            width="80"
-            height="80"
-            src="./asset/img/me.jpeg"
-            alt="pfp"
-          />
+            </div>
+          </div>
         </div>
-        <!-- Name -->
-        <h2 class="gradient">Iason Kostopoulos</h2>
-        <!-- social media container -->
-        <ul class="about-social-container">
-          <li>
-            <img src="./asset/svg/github.svg" alt="Github" />
-            <a href="https://github.com/Poleftaiger1984">Github</a>
-          </li>
-
-          <li>
-            <img src="./asset/svg/mail.svg" alt="LinkedIn" />
-            <a href="mailto:poleftaiger1984@gmail.com">Mail</a>
-          </li>
-
-          <li>
-            <img src="./asset/svg/linkedin.svg" alt="LinkedIn" />
-            <a href="https://www.linkedin.com/in/iasonas-kostopoulos-441469236/"> LinkedIn</a>
-          </li>
-        </ul>
-        <!-- long bio -->
-        <p>
-          I'm a new Computer Engineering graduate looking to be better at making games<br />
-         I also make random things that I like. <br>
-        </p>
-        <!-- Skills / Tools -->
-        <h3>Skills / Tools</h3>
-        <ul class="skill">
-          <li>C++</li>
-          <li>C</li>
-          <li>Unreal Engine</li>
-          <li>Blender</li>
-          <li>Houdini(Basic)</li>
-          <li>Raylib</li>
-          <li>SDL3</li>
-          <li>HTML</li>
-          <li>Javascript</li>
-          <li>Git</li>
-          <li>PHP</li>
-        </ul>
       </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here are a few personal game development projects and client websites I've worked on. 
+			They highlight my hands-on experience with Unreal Engine and WordPress.
+          </span>
+        </h2>
+        <div class="projects__tabs">
+  <button class="projects__tab projects__tab--active" onclick="showTab('games')">Game Projects</button>
+  <button class="projects__tab" onclick="showTab('websites')">Web Projects</button>
+</div>
+
+<!-- GAME -->
+<div class="projects__content" id="projects-games">
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/ThirdPerson.jpeg" alt="SlashGame" class="projects__row-img" />
     </div>
-
-    <footer>
-      <!-- Its okay to remove my name here (indeed you'll get hit) -->
-      <p>
-        © <script>document.write( new Date().getFullYear() );</script> Built by <a href="https://github.com/notshanxx">notshanxx</a>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">Third Person Action Game – Unreal Engine 5 & C++</h3>
+      <p class="projects__row-content-desc">
+        Developed in Unreal Engine 5 with C++. Features include AI, lock-on targeting, loot systems, and Niagara-based VFX.
       </p>
+	  <a href="./slashgame.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Project Overview</a>
+    </div>
+  </div>
+
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/OpenWorld.jpeg" alt="FPS Ideas" class="projects__row-img" />
+    </div>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">Open World FPS – Unreal Engine 5 / Blueprint & C++</h3>
+      <p class="projects__row-content-desc">
+         My master's thesis project focused on open-world design using real LIDAR data processed in Houdini to simulate terrain layers. 
+		 The game includes basic AI behavior trees and C++ systems for inventory and combat.
+      </p>
+      <a href="./fps-thesis.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Project Overview</a>
+    </div>
+  </div>
+
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/FPIdeas.jpeg" alt="Conceptual Game" class="projects__row-img" />
+    </div>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">Conceptual First-Person Game - Unreal Engine 5</h3>
+      <p class="projects__row-content-desc">
+        Ongoing prototyping of gameplay ideas and systems using Unreal Engine 5, Blueprints, and C++.
+      </p>
+	  <a href="https://github.com/Poleftaiger1984/FPS-Ideas" target="_blank" class="btn btn--med btn--theme dynamicBgClr">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- WEB -->
+<div class="projects__content d-none" id="projects-websites">
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/OlonInterior.jpeg" alt="Olon Interior" class="projects__row-img" />
+    </div>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">Olon Interior LLC (Michigan)</h3>
+      <p class="projects__row-content-desc">
+        WordPress site for a U.S.-based interior design firm.
+      </p>
+      <a href="https://www.oloninterior.com" target="_blank" class="btn btn--med btn--theme dynamicBgClr">View Website</a>
+    </div>
+  </div>
+
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/GNC3on3.jpeg" alt="GNC 3on3" class="projects__row-img" />
+    </div>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">GNC 3on3 (Patras, Greece)</h3>
+      <p class="projects__row-content-desc">
+        Delivered custom plugins and maintained WordPress site for a local basketball tournament.
+      </p>
+      <a href="https://gnc3on3.gr" target="_blank" class="btn btn--med btn--theme dynamicBgClr">View Website</a>
+    </div>
+  </div>
+
+  <div class="projects__row">
+    <div class="projects__row-img-cont">
+      <img src="./assets/jpeg/PMPMarble.jpeg" alt="PMP Marble" class="projects__row-img" />
+    </div>
+    <div class="projects__row-content">
+      <h3 class="projects__row-content-title">PMP Marble (Troy, Michigan)</h3>
+      <p class="projects__row-content-desc">
+        Responsive WordPress site for a marble supplier. Delivered custom design and SEO optimization for local visibility.
+      </p>
+      <a href="https://pmpmarble.com" target="_blank" class="btn btn--med btn--theme dynamicBgClr">View Website</a>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+         <span class="heading-sec__sub heading-sec__sub--lt">
+			You can contact me directly at <a href="mailto:kostojason@gmail.com" class="email-link">kostojason@gmail.com</a> or via phone at +30 6976579899.
+		 </span
+        </h2>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/iasonas-kostopoulos-441469236/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Poleftaiger1984">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Iason Kostopoulos</h4>
+            <p class="main-footer__short-desc">
+              Computer Engineering graduate specializing in backend development, game programming with Unreal Engine, and custom web solutions. 
+			  Passionate about building interactive systems and 3D experiences.
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
     </footer>
 
-    <!-- <h1 id="fin" style="
-        font-family: 'Work Sans', sans-serif;
-        font-size: 20px;
-        margin: 100vh 0 50vh 0;
-      ">
-      <i>~ fin ~</i>
-    </h1> -->
-    <!-- remove if you want to remove hover effect -->
-    <script type="module" src="./script/event-effect.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
+
+<script>
+  function showTab(tabName) {
+    const gameTab = document.getElementById('projects-games');
+    const webTab = document.getElementById('projects-websites');
+
+    // Remove active class from all buttons
+    document.querySelectorAll('.projects__tab').forEach(btn => btn.classList.remove('projects__tab--active'));
+
+    // Hide both with fade out first
+    [gameTab, webTab].forEach(tab => {
+      tab.classList.add('d-none');
+      tab.classList.remove('fade-in');
+    });
+
+    // Show the selected tab with fade-in animation
+    if (tabName === 'games') {
+      gameTab.classList.remove('d-none');
+      gameTab.classList.add('fade-in');
+      document.querySelector('[onclick="showTab(\'games\')"]').classList.add('projects__tab--active');
+    } else {
+      webTab.classList.remove('d-none');
+      webTab.classList.add('fade-in');
+      document.querySelector('[onclick="showTab(\'websites\')"]').classList.add('projects__tab--active');
+    }
+  }
+</script>
